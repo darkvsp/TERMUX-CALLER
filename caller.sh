@@ -32,7 +32,7 @@ then
      ./"$x".sh
 elif [ "$a" == 3 ]
 then
-     read -p "Please enter the 10 dogit number:" y
+     read -p "Please enter the 10 digit number:" y
      echo "Call to $y "
      termux-telephony-call "$y"
 elif [ "$a" == 4 ]
