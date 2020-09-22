@@ -7,8 +7,9 @@ figlet "" CALLER
 echo "DEVELOPED BY VSPSENTHOOR"
 printf '\e[93m'
 echo "Press 1 for save contact"
-echo "Press 2 for Call"
-echo "Press 3 for view contact list"
+echo "Press 2 for Call to saved contact"
+echo "Press 3 for Call to unsaved contact"
+echo "Press 4 for view contact list"
 read -p "Choose any one: " a
 if [ "$a" == 1 ];
 then
@@ -30,6 +31,11 @@ then
      echo "Calling to $x ....."
      ./"$x".sh
 elif [ "$a" == 3 ]
+then
+     read -p "Please enter the 10 dogit number:" y
+     echo "Call to $y "
+     termux-telephony-call "$y"
+elif [ "$a" == 4 ]
 then
      cd /data/data/com.termux/files/home/caller/contact/
      printf '\e[92m'
