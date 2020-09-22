@@ -33,7 +33,7 @@ elif [ "$a" == 3 ]
 then
      cd /data/data/com.termux/files/home/caller/contact/
      printf '\e[92m'
-     cat list.txt/
+     cat list.txt
      printf '\e[93m'
      echo "Type exit and hit enter for exit"
 else
