@@ -5,6 +5,7 @@ printf '\e[92m'
 echo "WELCOME TO CALLER"
 figlet "" C A L L E R
 echo "CALLER setup started"
+chmod +x caller.sh
 mkdir contact
 mv list.txt $HOME/caller/contact
 echo "*processing.....!"
