@@ -11,9 +11,7 @@ echo "CALLER setup started"
 chmod +x caller.sh
 mkdir contact
 mv list.txt $HOME/caller/contact
-mv caller.sh /data/data/com.termux/files/usr
-cd /data/data/com.termux/files/usr/
-mv caller.sh bin
+mv caller.sh /data/data/com.termux/files/usr/bin/
 cd
 echo "*processing.....!"
 sleep 1.5
